@@ -1,0 +1,26 @@
+
+  .tip{
+      position: relative;
+      cursor: pointer;
+      font-size: 30px;
+  }
+  .ss{
+      position: absolute;
+      top: calc(100% + 10px);
+      background: #ccc;
+      font-size: 15px;
+      padding: 6px;
+      border-radius: 10px;
+      display: none;
+  }
+  .tip:hover .ss{
+      display: block;
+  }
+  .ss::before{
+      content: '';
+      position: absolute;
+      top: calc(-45%);
+      left: 13px;
+      border: 8px solid transparent;
+      border-bottom-color: #ccc;
+  }
